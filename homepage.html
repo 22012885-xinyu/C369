@@ -2,10 +2,12 @@
 I will not copy or allow others to copy my code. 
 I understand that copying code is considered as plagiarism.
 
+Some codes were done with references of w3school.com
+
 Student Name: Tay Xin Yu
 Student ID:22012885
 Class: C369-2D-E63C-A
-Date/Time Last modified: 
+Date/Time Last modified: 14 August 2023 14:00
 -->
 
 <!DOCTYPE html>
@@ -144,7 +146,6 @@ Date/Time Last modified:
 
     .content {
       border-radius: 10px;
-      max-width: 1000px;
       height: 80px;
       background: white;
 
@@ -152,9 +153,7 @@ Date/Time Last modified:
 
     .content2 {
       border-radius: 10px;
-      max-width: 1000px;
       height: 45px;
-      margin: auto;
       background: white;
     }
 
@@ -307,13 +306,25 @@ Date/Time Last modified:
       <br>
       <br>
       <div class="content">
-        <p style="font-size:30px; padding: 15px;">Balance</p>
+        <p style="font-size:30px; padding: 15px; ">Balance
+          <span style="margin-left: 700px;">
+            $100.00
+          </span>
+        </p>
+
       </div>
       <br>
+
       <p style="font-size: 30px; margin-left: 15px;">Transactions</p>
       <br />
+
       <div class="content2">
-        <p style="font-size: 20px; margin-left: 15px; padding: 10px;">Transfer to Alice</p>
+        <p style="font-size: 20px; padding: 10px;">Transfer to Alice
+          <span style="color: red; margin-left: 850px; display: block; margin-top: -30px;">
+            -$15.00
+          </span>
+        </p>
+
       </div>
     </div>
 
@@ -391,7 +402,8 @@ Date/Time Last modified:
 
       <div class="grow-money-position-button">
         <button onclick="myFunctionGrowMoney()" class="grow-money-rounded-button">Grow Money</button>
-        <button style="margin-left: 560px;" onclick="myFunctionRedeem()" class="grow-money-rounded-button"> Redeem </button>
+        <button style="margin-left: 560px;" onclick="myFunctionRedeem()" class="grow-money-rounded-button"> Redeem
+        </button>
       </div>
 
       <div>
@@ -411,24 +423,6 @@ Date/Time Last modified:
           </select>
         </p>
       </div>
-
-      <!--<div style="min-width: 10000px;">
-        <h1> Investment </h1>
-        <p style="font-size:large;"> Invest Using
-          <input href style=" margin-left: 680px; width: 205px;" type="text" placeholder="123-456789-0" />
-        </p>
-
-        <p style="font-size:large;"> Risk Profile
-          <select style="width: 205px; height: 30px; margin-left: 688px;">
-            <option value="" slected></option>
-            <option value="Low">Low</option>
-            <option value="Medium">Medium</option>
-            <option value="High">High</option>
-            <option value="Very High">Very High</option>
-
-          </select>
-        </p>
-      </div>-->
     </div>
 
     <!--tab for Insurance-->
@@ -532,9 +526,11 @@ Date/Time Last modified:
         document.getElementById(bankTab).style.display = "block";
         evt.currentTarget.className += " active";
       }
+  
       window.onload = function () {
         alert("DON'T share your personal details, OTP as these may lead to fraud !");
-      };
+      }; 
+    
       document.getElementById("defaultOpen").click();
       function myFunction() {
         var url = "http://127.0.0.1:5500/homepage.html";
